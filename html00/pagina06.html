@@ -20,7 +20,7 @@
     
     <script>
         const Picture = (id, name) => {
-            const url = https://picsum.photos/id/${id}/200/200
+            const url = `https://picsum.photos/id/${id}/200/200`
             return `
                 <figure>
                 <img src="${url}" alt="" class="redonda">
@@ -29,7 +29,7 @@
             `
         };
 
-        let x = document.getElementById('app').innerHTML = Picture(1, "Mich") + Picture(2, "Vane")
+        let x = document.getElementById('app').innerHTML = Picture(1, "pablo") + Picture(2, "shadi")
 
         const lista = app.querySelectorAll("img")
         console.log(lista)
