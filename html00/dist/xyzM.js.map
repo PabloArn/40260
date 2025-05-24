@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../yM.js", "../xM.js", "../zM.js", "../xyzM.js"],
+  "sourcesContent": ["export function y(params) {\r\n    console.log(\"y: \" + params)\r\n    return \"fin y\"\r\n}\r\n", "import {y} from \"./yM.js\"\r\n\r\n\r\nfunction x(params) {\r\n    y(\"x\")\r\n    console.log(\"x: \" + params)\r\n    return \"fin x\"\r\n}\r\n\r\nfunction xx(params) {\r\n    return \"fin xx\"\r\n}\r\n\r\nexport {x, xx}", "export function z(params) {\r\n    console.log(\"z: \" + params)\r\n    return \"fin z\"\r\n}\r\n", "import * as miModdulo from \"./xM.js\"\r\nimport { y } from \"./yM.js\"\r\nimport { z } from \"./zM.js\"\r\n\r\ndocument.getElementById(\"app\")\r\nconsole.log(miModdulo.x(\"abc\"))\r\nconsole.log(miModdulo.xx(\"def\"))\r\nconsole.log(y (\"ghi\"))\r\nconsole.log(z (\"jkl\"))"],
+  "mappings": "MAAO,SAASA,EAAEC,EAAQ,CACtB,eAAQ,IAAI,MAAQA,CAAM,EACnB,OACX,CCAA,SAASC,EAAEC,EAAQ,CACf,OAAAC,EAAE,GAAG,EACL,QAAQ,IAAI,MAAQD,CAAM,EACnB,OACX,CAEA,SAASE,EAAGF,EAAQ,CAChB,MAAO,QACX,CCXO,SAASG,EAAEC,EAAQ,CACtB,eAAQ,IAAI,MAAQA,CAAM,EACnB,OACX,CCCA,SAAS,eAAe,KAAK,EAC7B,QAAQ,IAAcC,EAAE,KAAK,CAAC,EAC9B,QAAQ,IAAcC,EAAG,KAAK,CAAC,EAC/B,QAAQ,IAAIC,EAAG,KAAK,CAAC,EACrB,QAAQ,IAAIC,EAAG,KAAK,CAAC",
+  "names": ["y", "params", "x", "params", "y", "xx", "z", "params", "x", "xx", "y", "z"]
+}

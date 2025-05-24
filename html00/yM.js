@@ -1,5 +1,4 @@
-function y(params) {
+export function y(params) {
     console.log("y: " + params)
-    return y
+    return "fin y"
 }
-export {y}
